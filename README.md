@@ -1,7 +1,6 @@
-# Clustering the Countries by Using Unsupervised Learning for HELP International
-
+# HELP International: Country Clustering for Development Insights and Resources Allocation
 ## Project Overview
-HELP International is a non-profit organization focused on providing aid to underdeveloped nations. This project aims to categorize countries based on socio-economic and health factors to identify priority areas for intervention. Using clustering techniques, we analyze patterns in the data and group countries with similar developmental attributes.
+HELP International is a non-profit organization focused on providing aid to underdeveloped nations. This project aims to categorize countries based on socio-economic and health factors to identify priority areas for intervention. Using clustering techniques, I analyze patterns in the data and group countries with similar developmental attributes.
 
 ---
 
@@ -17,8 +16,6 @@ The dataset includes 167 countries and the following features:
 - `life_expec`: Life expectancy (years)
 - `total_fer`: Total fertility rate (children per woman)
 - `gdpp`: GDP per capita (USD)
-
-The dataset contains no missing or duplicate values and has been standardized for clustering.
 
 ---
 
@@ -36,16 +33,15 @@ The dataset contains no missing or duplicate values and has been standardized fo
 
 ### K-Means Clustering
 - **Elbow Method**: Determined the optimal number of clusters by analyzing inertia.
-- **Silhouette Scores**: Evaluated cluster cohesion and separation. Best result: **5 clusters**.
+- **Silhouette Scores**: Evaluated cluster cohesion and separation. Best result: **5 clusters*.
 
 ### Hierarchical Clustering
 - Used Ward's linkage method to construct a dendrogram.
 - Agglomerative Clustering with **2 clusters** achieved the best results:
-  - Silhouette Score: `0.3153`
-  - Davies-Bouldin Index: `1.3273`
 
 ### DBSCAN
 - Explored combinations of `eps` and `min_samples`
+  - Best Parameters: `eps=2.5`, `min_samples=5`
 
 ### PCA + K-Means
 - PCA reduced the dataset to **2 components**, retaining 90% variance.
