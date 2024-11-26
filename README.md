@@ -2,8 +2,6 @@
 ## Project Overview
 HELP International is a non-profit organization focused on providing aid to underdeveloped nations. This project aims to categorize countries based on socio-economic and health factors to identify priority areas for intervention. Using clustering techniques, I analyze patterns in the data and group countries with similar developmental attributes.
 
----
-
 ## Dataset
 The dataset includes 167 countries and the following features:
 
@@ -17,17 +15,12 @@ The dataset includes 167 countries and the following features:
 - `total_fer`: Total fertility rate (children per woman)
 - `gdpp`: GDP per capita (USD)
 
----
-
 ## Methods and Techniques
-
 ### 1. Exploratory Data Analysis (EDA)
 - Conducted exploratory data analysis (EDA) to understand relationships and feature importance.
 
 ### 2. Data Preprocessing
 - **StandardScaler**: Used to scale all numerical features for clustering algorithms.
-
----
 
 ## Clustering Methods
 
@@ -46,8 +39,6 @@ The dataset includes 167 countries and the following features:
 ### PCA + K-Means
 - PCA reduced the dataset to **2 components**, retaining 90% variance.
 - K-Means applied to the reduced data
-  
----
 
 ## Results Summary
 
